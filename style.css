@@ -37,7 +37,8 @@ form{
     text-align: left;
  }
 form input[type="text"]{
-    padding: 15px 100px;
+   padding: 15px 20px;
+    width: 70%;
     margin-right: 10px;
     border-radius: 30px;
     border: 1px solid  hsl(223, 100%, 88%);
