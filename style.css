@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    max-width: 650px;
+    width: 90%;
+    margin:100px auto;
+    text-align: center;
+}
+h2{
+    color:hsl(0, 0%, 59%);
+    font-weight: 600;
+    font-size: 1.7em;
+    letter-spacing: 3px;
+    padding:30px 0 10px 0;
+}
+h2 span{
+    color: black;
+    font-weight: 700;
+}
+.form p{
+    color:hsl(209, 33%, 12%);
+}
+form{
+     margin: 30px 0 60px 0;
+    text-align: left;
+ }
+form input[type="text"]{
+    padding: 13px 20px;
+    width: 70%;
+    margin-right: 10px;
+    border-radius: 30px;
+    border: 1px solid  hsl(223, 100%, 88%);
+    outline: none;
+
+} 
+small{
+   font-style: italic;
+    color:  hsl(354, 100%, 66%);
+    font-size: 13px;
+   margin-left: 30px;
+    display: none;
+  }
+input[type="text"].error{
+    border-color: hsl(354, 100%, 66%);
+}
+input::placeholder{
+    color:hsl(223, 100%, 88%);
+}
+input[type="submit"]{
+     padding: 13px 40px;
+    border-radius: 30px;
+    font-size: inherit;
+    border: none;
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    cursor: pointer;
+    outline: none;
+    box-shadow: 2px 3px 5px 3px  hsl(223, 100%, 88%);
+}
+.footer{
+    margin-top: 100px;
+    color: hsl(0, 0%, 59%);
+}
+.footer .social-icons{
+    display: flex;
+    justify-content: center;
+}
+.footer .icon{
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: hsl(223, 87%, 63%);
+    cursor: pointer;
+
+}
+.footer .icon:hover{
+background-color: hsl(223, 87%, 63%);
+color: white;
+}
+p.copyright{
+    margin-top: 30px;
+}
+@media screen and (max-width:991px){
+
+form{
+    position: relative;
+    height: 140px;
+    text-align: center;
+}
+form small{
+    margin:0;
+}
+form input[type="submit"], form input[type="text"]{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    }
+form input[type="submit"]{
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+}
+@media screen and (max-width:500px){
+    h2{
+        font-size: 1em;
+        font-weight: 700;
+    }
+    p.copyright{
+        font-size: 0.9em;
+    }
+}
